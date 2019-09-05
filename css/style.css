@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
-body {
+html, body {
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -7,9 +7,11 @@ body {
 /* ------------------Navbar--------------- */
 
 .topnav {
+    width: 100%;
+    position: absolute;
     cursor: pointer;
     overflow: hidden;
-    background-color: rgb(27, 27, 27);
+    background-color: rgba(53, 63, 73, 0.643);
 }
 
 .topnav a {
@@ -17,7 +19,7 @@ body {
     display: block;
     color: #d6d6d6;
     text-align: center;
-    padding: 20px 100px;
+    padding: 10px 50px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -43,7 +45,7 @@ body {
 
 @media screen and (max-width: 700px) {
     .topnav.responsive {
-        position: relative;
+        position: absolute;
     }
     .topnav.responsive .icon {
         position: relative;
@@ -61,29 +63,64 @@ body {
 
 /* --------------profile-------------- */
 
-.image {
-    max-width: 150px;
-    box-shadow: 0 4px 8px 0 rgba(9, 10, 66, 0.698);
-    border-radius: 100px;
+header {
+    padding: .1px;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.me {
+    margin-top: 10em;
+    font-size: 20pt;
 }
 
 /* --------------end profile-------------- */
 
-.div-home {
-    background: rgb(27, 27, 27);
-    color: white;
-    padding: 100px;
+/* -----------------about me ---------------- */
+
+#about {
     text-align: center;
+}
+
+.profile {
+    max-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(75, 82, 90, 0.87);
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----------------end about me ---------------- */
+
+#home, .site-footer {
+    background-image: url('../src/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+}
+
+section {
+    height: 90vh;
+    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* -----------------footer----------------- */
 
 .site-footer {
-    background-color: rgb(27, 27, 27);
     color: white;
+    font-size: 12pt;
     text-align: center;
-    margin: 0;
-    padding: 10px 0;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #social-wrapper {
@@ -96,24 +133,32 @@ body {
 
 .social-wrapper ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 1 1px;
 }
 
-.facebook-icon, .instagram-icon, .linkedin-icon {
-    margin-top: 0em;
-    width: 50px;
-    height: 50px;
+.facebook-icon, .instagram-icon, .linkedin-icon, .github-icon,.email-icon {
+    width: 40px;
+    height: 40px;
     opacity: .5;
     filter: alpha(opacity=100);
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
-.facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover {
+.facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .github-icon:hover, .email-icon:hover {
     opacity: 1.0;
     filter: alpha(opacity=100);
-
 }
 
 .footer-nav p {
     text-align: center;
+}
+
+::-webkit-scrollbar {   
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    background: rgba(71, 71, 71, 0.198); 
 }

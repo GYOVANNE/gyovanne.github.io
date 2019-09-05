@@ -12,7 +12,7 @@ var home = "home";
 var contact = "contact";
 var portfolio = "portfolio";
 
-function getScrol(id){
+function getScrol(id) {
     var element = document.getElementById(id);
-    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
