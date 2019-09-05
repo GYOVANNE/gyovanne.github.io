@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
 html, body {
-    margin: 0;
+    margin: auto;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -11,13 +11,13 @@ html, body {
     position: absolute;
     cursor: pointer;
     overflow: hidden;
-    background-color: rgba(53, 63, 73, 0.643);
+    background-color: rgba(70, 70, 70, 0.89);
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: #d6d6d6;
+    color: #ffffff;
     text-align: center;
     padding: 10px 50px;
     text-decoration: none;
@@ -72,12 +72,18 @@ header {
 
 .me {
     margin-top: 10em;
-    font-size: 20pt;
 }
 
 /* --------------end profile-------------- */
 
 /* -----------------about me ---------------- */
+
+.about-text {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    min-width: 140px;
+}
 
 #about {
     text-align: center;
@@ -98,18 +104,21 @@ header {
     background-image: url('../src/background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-color: #000000;
 }
 
 section {
     height: 90vh;
-    padding: 0px;
     margin-top: 100px;
-    margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#technology{
+    height: auto;
 }
 
 /* -----------------footer----------------- */
@@ -136,7 +145,13 @@ section {
     margin: 1 1px;
 }
 
-.facebook-icon, .instagram-icon, .linkedin-icon, .github-icon,.email-icon {
+.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon,.mysql-icon,.spring-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 1px;padding: 1px 20px;
+}
+
+.facebook-icon, .instagram-icon, .linkedin-icon, .github-icon, .email-icon, .lattes-icon {
     width: 40px;
     height: 40px;
     opacity: .5;
@@ -144,7 +159,7 @@ section {
     border-radius: 100px;
 }
 
-.facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .github-icon:hover, .email-icon:hover {
+.facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .github-icon:hover, .email-icon:hover, .lattes-icon:hover {
     opacity: 1.0;
     filter: alpha(opacity=100);
 }
@@ -153,12 +168,12 @@ section {
     text-align: center;
 }
 
-::-webkit-scrollbar {   
+::-webkit-scrollbar {
     width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 20px;
-    background: rgba(71, 71, 71, 0.198); 
+    background: rgba(71, 71, 71, 0.198);
 }

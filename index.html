@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="topnav" id="myTopnav">
+    <div class="topnav " id="myTopnav">
         <a onclick="getScrol(home)" class="active">Home</a>
         <a onclick="getScrol(portfolio)">Portfolio</a>
         <a onclick="getScrol(about)">About me</a>
@@ -25,8 +25,8 @@
 
     <header id="home">
         <div class="me">
-            <h1>Hello, I'm Gyovanne</h1>
-            <p>Developer.</p>
+            <h1 style="font-size: 3em;">Hello, I'm Gyovanne</h1>
+            <p style="font-size: 2em;">Developer.</p>
         </div>
     </header>
 
@@ -38,11 +38,26 @@
     </section>
     <section id="about">
         <h3>About me</h3>
-        <img class="profile" src="src/gyovanne.jpg" alt="John" style="width:100%">
-        <p>
-            Bachelor Degree in progress in Information Technology [IT], emphasis in Software Engineering, at Federal
-            University Semi-Arid Rural (UFERSA).
+        <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne">
+        <p class="about-text" style="text-align: justify;">
+            Bachelor Degree in Information Technology in progress, emphasis in Software Engineering, Federal Rural
+            Semi-Arid
+            University (UFERSA). He was a student of Scientific Initiation by the Institutional Program of Volunteer
+            in
+            Scientific Initiation (PIVIC), student of Scientific Initiation by the Program of Institutional
+            Scientific
+            Initiation (PICI) and member of the Research Group on Critical Security Systems (GPSICS).
         </p>
+    </section>
+    <section id="technology">
+            <h3>Technology</h3>
+            <img src="src/about/java.png" alt="Java Logo" class="java-icon">
+            <img src="src/about/c.png" alt="C Logo" class="c-icon">
+            <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
+            <img src="src/about/css.png" alt="CSS Logo" class="css-icon">
+            <img src="src/about/bootstrap.png" alt="Bootstrap Logo" class="bootstrap-icon">
+            <img src="src/about/mysql.png" alt="MySQL Logo" class="mysql-icon">
+            <img src="src/about/spring.png" alt="Spring MVC Logo" class="spring-icon">
     </section>
     <footer id="contact" class="site-footer" role="contentinfo">
         <div class="social-wrapper">
@@ -52,7 +67,7 @@
                     Cell: (84) 9 9932-4048
                 </p>
                 <li>
-                    <a href="emailto:gyovanne.ufersa@gmail.com" target="_blank">
+                    <a href="mailto:gyovanne.ufersa@gmail.com" target="_blank">
                         <img src="src/about/email.png" alt="Email Logo" class="email-icon"></a>
                 </li>
                 <li>
@@ -70,6 +85,10 @@
                 <li>
                     <a href="https://github.com/GYOVANNE" target="_blank">
                         <img src="src/about/github.png" alt="Github Logo" class="github-icon"></a>
+                </li>
+                <li>
+                    <a href=" http://lattes.cnpq.br/0302017976487778" target="_blank">
+                        <img src="src/about/lattes.png" alt="Lattes Logo" class="lattes-icon"></a>
                 </li>
             </ul>
         </div>
