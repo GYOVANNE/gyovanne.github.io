@@ -57,6 +57,10 @@ html, body {
         display: block;
         text-align: center;
     }
+    .responsive-img {
+        width: 50%;
+        margin: 6px 0;
+    }
 }
 
 /* ------------------End Navbar--------------- */
@@ -71,7 +75,7 @@ header {
 }
 
 .me {
-    margin-top: 10em;
+    padding-top: 5em;
 }
 
 /* --------------end profile-------------- */
@@ -117,8 +121,9 @@ section {
     text-align: center;
 }
 
-#technology{
-    height: auto;
+#technology {
+    padding-top: 10em;
+    height: 100%;
 }
 
 /* -----------------footer----------------- */
@@ -145,10 +150,11 @@ section {
     margin: 1 1px;
 }
 
-.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon,.mysql-icon,.spring-icon {
+.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .spring-icon {
     width: 60px;
     height: 60px;
-    border-radius: 1px;padding: 1px 20px;
+    border-radius: 1px;
+    padding: 1px 20px;
 }
 
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon, .email-icon, .lattes-icon {
@@ -168,6 +174,8 @@ section {
     text-align: center;
 }
 
+/* --------------scrollbar---------------- */
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -176,4 +184,53 @@ section {
     -webkit-border-radius: 10px;
     border-radius: 20px;
     background: rgba(71, 71, 71, 0.198);
+}
+
+/* --------------------typewriter------------------ */
+
+h1, h2 {
+    font-weight: 100;
+    margin: 0.4em 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* -------------------portfolio------------------------- */
+
+div.gallery {
+    box-shadow: 0 4px 8px 0 rgba(75, 82, 90, 0.87);
+}
+
+div.gallery:hover {
+    box-shadow: 0 8px 16px 0 rgba(75, 82, 90, 0.87);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+.responsive-img {
+    padding: 0 10px;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-img {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
