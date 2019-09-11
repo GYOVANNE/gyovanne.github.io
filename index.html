@@ -5,77 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/style.css">
     <title>Gyovanne Cavalcanti</title>
 </head>
 
-
 <body>
-
-    <div class="topnav " id="myTopnav">
-        <a onclick="getScrol(home)" class="active">Home</a>
-        <a onclick="getScrol(portfolio)">Portfolio</a>
-        <a onclick="getScrol(about)">About me</a>
-        <a onclick="getScrol(contact)">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-    <header id="home">
-        <div style="font-size: 3em;" class="me">Hello, I'm Gyovanne.</div>
-        <p style="font-size: 2em;">Software Developer.</p>
-    </header>
-    <section id="portfolio">
-        <h3>Portfolio</h3>
-        <p>
-            Some of my Projects
-        </p>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="src/multcare/paginaInicial.png" alt="Jane" style="width:100%">
-                    <div class="container">
-                        <h2>MultCare Médico</h2>
-                        <p class="title">Software web</p>
-                        <p>O MultCare Médico é uma solução para a manipulação e compartilhamento de documentos clínicos
-                            baseados no padrão HL7 CDA utilizada para o diagnóstico da DRC.</p>
-                        <!-- <p><button class="button">Mais</button></p> -->
-                    </div>
-                </div>
+    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button data-toggle="collapse-side" data-target=".side-collapse"
+                    data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
-
-            <div class="column">
-                <div class="card">
-                    <img src="src/musicplayer/musicplayer.png" alt="Mike" style="width:100%">
-                    <div class="container">
-                        <h2>Radio Retrô</h2>
-                        <p class="title">Software web</p>
-                        <p>A RádioRetrô é um reprodutor de áudio disponível para usuários que gostam de ouvir músicas
-                            de qualidade. No geral, esse sistema fornece ao usuário as funcionalidades básicas de um
-                            reprodutor de áudio, com uma interface simplificada e bem intuitiva.</p>
-                        <!-- <p><button class="button">Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="src/solarsystem/solarSystem.png" alt="John" style="width:100%">
-                    <div class="container">
-                        <h2>Solar System</h2>
-                        <p class="title">Sistema web</p>
-                        <p>O Solar System é um software para web para amantes de astronomia. Nele é possível visualizar
-                            o sistema solar de maneira precisa, na perspectiva de velocidade, distância e tamanho de
-                            cada planeta.</p>
-                        <p><button class="button" onclick="window.location.href = 'https://gyovanne.github.io/SolarSystem';">Acessar</button></p>
-                    </div>
-                </div>
+            <div class="navbar-inverse side-collapse in">
+                <nav role="navigation" class="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li> <a onclick="getScrol(home)" class="active">Home</a></li>
+                        <li><a onclick="getScrol(about)">About</a></li>
+                        <li><a onclick="getScrol(portfolio)">Portfolio</a></li>
+                        <li><a onclick="getScrol(skills)">Skills</a></li>
+                        <li><a onclick="getScrol(contact)">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-
+    </header>
+    <section id="home">
+        <div class="bg-image"></div>
+        <div class="bg-text">
+            <div style="font-size: 2em;" class="me">Hello, I'm Gyovanne.</div>
+            <p style="font-size: 1em;">Software Developer.</p>
+        </div>
     </section>
+
     <section id="about">
         <h3>About me</h3>
         <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne">
@@ -89,20 +52,46 @@
             Initiation (PICI) and member of the Research Group on Critical Security Systems (GPSICS).
         </p>
     </section>
-    <section id="technology">
-        <h3>Technology</h3>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-        <h1>Do you need a solution in
-            <span class="txt-rotate" data-period="1000"
-                data-rotate='[ "Java?", "C?", "HTML?", "CSS?","BOOTSTRAP?","MySQL?","Spring MVC?"]'></span>
-        </h1>
-        <img src="src/about/java.png" alt="Java Logo" class="java-icon">
-        <img src="src/about/c.png" alt="C Logo" class="c-icon">
-        <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
-        <img src="src/about/css.png" alt="CSS Logo" class="css-icon">
-        <img src="src/about/bootstrap.png" alt="Bootstrap Logo" class="bootstrap-icon">
-        <img src="src/about/mysql.png" alt="MySQL Logo" class="mysql-icon">
-        <img src="src/about/spring.png" alt="Spring MVC Logo" class="spring-icon">
+    <section id="portfolio">
+
+        <h3>Portfolio</h3>
+        <p>
+            Some of my Projects
+        </p>
+        <div class="main">
+
+            <div class="row">
+                <div class="content">
+                    <img src="src/multcare/paginaInicial.png" alt="Bear" style="width:100%">
+                    <h2>MultCare Médico</h2>
+                    <p>O MultCare Médico é uma solução para a manipulação e compartilhamento de documentos clínicos
+                        baseados no padrão HL7 CDA utilizada para o diagnóstico da DRC.</p>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="src/solarsystem/solarSystem.png" alt="Lights" style="width:100%">
+                        <h2>Solar System</h2>
+                        <p>O Solar System é um software para web para amantes de astronomia. Nele é possível visualizar
+                            o sistema solar de maneira precisa, na perspectiva de velocidade, distância e tamanho de
+                            cada planeta.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <img src="src/about/java.png" alt="Java Logo" class="java-icon">
+            <img src="src/about/c.png" alt="C Logo" class="c-icon">
+            <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
+            <img src="src/about/css.png" alt="CSS Logo" class="css-icon">
+            <img src="src/about/bootstrap.png" alt="Bootstrap Logo" class="bootstrap-icon">
+            <img src="src/about/mysql.png" alt="MySQL Logo" class="mysql-icon">
+            <img src="src/about/spring.png" alt="Spring MVC Logo" class="spring-icon">
+        </div>
     </section>
     <footer id="contact" class="site-footer" role="contentinfo">
         <div class="social-wrapper">
@@ -138,7 +127,9 @@
             </ul>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/style.js"></script>
+
 </body>
 
 </html>

@@ -6,69 +6,56 @@ html, body {
 
 /* ------------------Navbar--------------- */
 
-.topnav {
-    width: 100%;
-    position: absolute;
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgb(160, 160, 160);
+    font-size: 20px;
     cursor: pointer;
-    overflow: hidden;
-    background-color: rgba(70, 70, 70, 0.89);
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-size: 17px;
+.navbar-inverse {
+    background-color: #414141;
+    border-color: #080808;
 }
 
-.topnav a:hover {
-    background-color: rgb(168, 168, 168);
-    color: black;
+pre {
+    tab-size: 1;
 }
 
-.topnav .icon {
-    display: none;
-}
-
-@media screen and (max-width: 700px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .topnav.responsive {
-        position: absolute;
-    }
-    .topnav.responsive .icon {
+@media screen and (max-width: 768px) {
+    .side-collapse-container {
+        width: 100%;
         position: relative;
-        right: 0;
-        top: 0;
+        left: 0;
+        transition: left 0.4s;
     }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
+    .side-collapse-container.out {
+        left: 200px;
     }
-    .responsive-img {
-        width: 50%;
-        margin: 6px 0;
+    .side-collapse {
+        top: 50px;
+        bottom: 10;
+        left: 0;
+        width: 150px;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s;
+    }
+    .side-collapse.in {
+        width: 0;
     }
 }
 
 /* ------------------End Navbar--------------- */
 
-/* --------------profile-------------- */
+/* --------------home-------------- */
 
-header {
-    padding: .1px;
+#home {
+    /* padding: .1px; */
     height: 100vh;
     color: white;
     text-align: center;
@@ -78,19 +65,57 @@ header {
     padding-top: 5em;
 }
 
-/* --------------end profile-------------- */
+.bg-image {
+    background-image: url('../src/background.jpg');
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.452);
+    color: white;
+    border: 0.1px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 0px;
+    text-align: center;
+}
+
+.site-footer, #home {
+    background-color: #2a2a2af6;
+}
+
+/* --------------end home-------------- */
+
+#portfolio {
+    height: auto;
+    padding: 50px;
+    text-align: center;
+}
 
 /* -----------------about me ---------------- */
 
-.about-text {
+#about {
+    height: auto;
+    padding-top: 50px;
     text-align: center;
+    margin: 20px 20px;
+}
+
+.about-text {
     margin: 40px auto;
     max-width: 900px;
     min-width: 140px;
-}
-
-#about {
-    text-align: center;
+    font-size: 18px;
 }
 
 .profile {
@@ -104,26 +129,12 @@ header {
 
 /* -----------------end about me ---------------- */
 
-#home, .site-footer {
-    background-image: url('../src/background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-}
+/* ------------technology----------------- */
 
-section {
-    height: 90vh;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+#skills {
+    height: auto;
+    padding: 50px;
     text-align: center;
-}
-
-#technology {
-    padding-top: 10em;
-    height: 100%;
 }
 
 /* -----------------footer----------------- */
@@ -151,7 +162,7 @@ section {
 }
 
 .java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .spring-icon {
-    width: 60px;
+    width: 100px;
     height: 60px;
     border-radius: 1px;
     padding: 1px 20px;
@@ -186,68 +197,68 @@ section {
     background: rgba(71, 71, 71, 0.198);
 }
 
-/* --------------------typewriter------------------ */
+/* -------------------portfolio------------------------- */
 
-h1, h2 {
-    font-weight: 100;
-    margin: 0.4em 0;
+/* Center website */
+* {
+    box-sizing: border-box;
+  }
+  
+.main {
+    max-width: 1000px;
+    margin: auto;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 50px;
+    word-break: break-all;
 }
 
-/* -------------------portfolio------------------------- */
-
-*, *:before, *:after {
-    box-sizing: inherit;
+.row {
+    margin: 8px -16px;
 }
+
+/* Add padding BETWEEN each column */
+
+.row, .row>.column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
 
 .column {
     float: left;
-    width: 22.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    width: 25%;
 }
 
-@media screen and (max-width: 720px) {
+/* Clear floats after rows */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+
+.content {
+    background-color: transparent;
+    box-shadow: 0 8px 16px 0 rgba(75, 82, 90, 0.87);
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 900px) {
     .column {
-        width: 100%;
-        display: block;
+        width: 50%;
     }
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
-}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
-.container {
-    padding: 0 16px;
-}
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 0px;
-    color: white;
-    background-color: rgba(39, 39, 39, 0.596);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: rgb(59, 59, 59);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
