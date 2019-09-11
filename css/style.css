@@ -7,23 +7,35 @@ html, body {
 /* ------------------Navbar--------------- */
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: rgb(255, 255, 255);
-    background-color: transparent;
+    background-color: #0f1418d0;
+    color: white;
+    box-shadow: 0 4px 8px 0 #0f1418d0;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: rgb(160, 160, 160);
     font-size: 20px;
+    color: white;
     cursor: pointer;
 }
 
+.blurry .blurrer {
+    height: 60px;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -500;
+    background-color: #0f1418b2;
+}
+
 .navbar-inverse {
-    background-color: #414141;
-    border-color: #080808;
+    background-color: transparent;
+    color: white;
 }
 
 pre {
-    tab-size: 1;
+    tab-size: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -38,12 +50,15 @@ pre {
     }
     .side-collapse {
         top: 50px;
-        bottom: 10;
+        bottom: 0;
         left: 0;
         width: 150px;
         position: fixed;
         overflow: hidden;
         transition: width .4s;
+        background-color: #0f1418b2;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     .side-collapse.in {
         width: 0;
@@ -67,8 +82,8 @@ pre {
 
 .bg-image {
     background-image: url('../src/background.jpg');
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +106,7 @@ pre {
 }
 
 .site-footer, #home {
-    background-color: #2a2a2af6;
+    background-color: rgb(31, 31, 31);
 }
 
 /* --------------end home-------------- */
@@ -106,7 +121,7 @@ pre {
 
 #about {
     height: auto;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
     margin: 20px 20px;
 }
@@ -133,7 +148,8 @@ pre {
 
 #skills {
     height: auto;
-    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
 }
 
@@ -161,7 +177,7 @@ pre {
     margin: 1 1px;
 }
 
-.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .spring-icon {
+.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .spring-icon, .sqlite-icon, .gitlab-icon, .uml-icon, .latex-icon {
     width: 100px;
     height: 60px;
     border-radius: 1px;
@@ -200,18 +216,14 @@ pre {
 /* -------------------portfolio------------------------- */
 
 /* Center website */
+
 * {
     box-sizing: border-box;
-  }
-  
+}
+
 .main {
     max-width: 1000px;
     margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
 }
 
 .row {
@@ -221,7 +233,7 @@ h1 {
 /* Add padding BETWEEN each column */
 
 .row, .row>.column {
-    padding: 8px;
+    padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -243,7 +255,7 @@ h1 {
 
 .content {
     background-color: transparent;
-    box-shadow: 0 8px 16px 0 rgba(75, 82, 90, 0.87);
+    box-shadow: 0 1px 16px 0 rgba(75, 82, 90, 0.87);
     padding: 10px;
 }
 
@@ -261,4 +273,11 @@ h1 {
     .column {
         width: 100%;
     }
+}
+
+.button {
+    border-radius: 10px;
+    color: rgb(97, 97, 97);
+    border-color:transparent;
+    box-shadow: 0 1px 4px 0 rgba(75, 82, 90, 0.87);
 }
