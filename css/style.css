@@ -7,9 +7,9 @@ html, body {
 /* ------------------Navbar--------------- */
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    background-color: #0f1418d0;
+    background-color: rgba(21, 27, 34, 0.643);
     color: white;
-    box-shadow: 0 4px 8px 0 #0f1418d0;
+    box-shadow: 0 4px 8px 0 rgba(21, 27, 34, 0.643);
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -26,7 +26,7 @@ html, body {
     position: absolute;
     overflow: hidden;
     z-index: -500;
-    background-color: #0f1418b2;
+    background-color: rgba(21, 27, 34, 0.643);
 }
 
 .navbar-inverse {
@@ -56,7 +56,7 @@ pre {
         position: fixed;
         overflow: hidden;
         transition: width .4s;
-        background-color: #0f1418b2;
+        background-color: rgba(21, 27, 34, 0.643);
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -94,7 +94,7 @@ pre {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.452);
     color: white;
-    border: 0.1px solid #f1f1f1;
+    border: 0.1px solid rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,7 +135,7 @@ pre {
 
 .profile {
     max-width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(75, 82, 90, 0.87);
+    box-shadow: 0 4px 8px 0 rgba(63, 72, 83, 0.876);
     border-radius: 100px;
     display: block;
     margin-left: auto;
