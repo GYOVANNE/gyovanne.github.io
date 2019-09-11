@@ -199,38 +199,55 @@ h1 {
 
 /* -------------------portfolio------------------------- */
 
-div.gallery {
-    box-shadow: 0 4px 8px 0 rgba(75, 82, 90, 0.87);
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-div.gallery:hover {
-    box-shadow: 0 8px 16px 0 rgba(75, 82, 90, 0.87);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 20px;
-    text-align: center;
-}
-
-.responsive-img {
-    padding: 0 10px;
+.column {
     float: left;
-    width: 25%;
+    width: 22.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
-@media screen and (max-width: 600px) {
-    .responsive-img {
+@media screen and (max-width: 720px) {
+    .column {
         width: 100%;
+        display: block;
     }
 }
 
-.clearfix:after {
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 0px;
+    color: white;
+    background-color: rgba(39, 39, 39, 0.596);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
 }
