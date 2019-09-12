@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
     <title>Gyovanne Cavalcanti</title>
 </head>
 
@@ -34,16 +36,19 @@
     </header>
     <section id="home">
         <div class="bg-image"></div>
-        <div class="bg-text">
-            <div style="font-size: 2em;" class="me">Hello, I'm Gyovanne.</div>
-            <p style="font-size: 1em;">Software Developer.</p>
+        <div class="bg-text me">
+            <div style="font-size: 3em;" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">Hello,
+                I'm Gyovanne.</div>
+            <p style="font-size: 2em;" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">Software
+                Developer.</p>
         </div>
     </section>
 
     <section id="about">
         <h3>About me</h3>
-        <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne">
-        <p class="about-text" style="text-align: justify;">
+        <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne" data-aos="zoom-in">
+        <p class="about-text" style="text-align: justify;" data-aos="fade-left" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             Bachelor Degree in Information Technology in progress, emphasis in Software Engineering, Federal Rural
             Semi-Arid
             University (UFERSA). He was a student of Scientific Initiation by the Institutional Program of Volunteer
@@ -54,15 +59,13 @@
         </p>
     </section>
     <section id="portfolio">
-
         <h3>Portfolio</h3>
         <p>
             Some of my Projects
         </p>
         <div class="main">
-
             <div class="row">
-                <div class="content">
+                <div class="content" data-aos="fade-right">
                     <img src="src/multcare/paginaInicial.png" alt="MultCare Medico" style="width:100%">
                     <h2>MultCare Médico</h2>
                     <p>The MultCare Medical is a solution for the handling and sharing of clinical documents based on
@@ -73,21 +76,20 @@
                         software. This made it possible to verify the solution's compliance against the HL7 CDA
                         specification.</p>
                 </div>
-                <div class="column">
+                <div class="column" data-aos="fade-left">
                     <div class="content">
                         <img src="src/solarsystem/solarSystem.png" alt="Solar System" style="width:100%">
                         <h2>Solar System</h2>
                         <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the
                             solar system from the perspective of the speed, distance and size of each planet.</p>
-                            <button class="button" onclick="window.location.href='http://gyovanne.github.io/SolarSystem'" >Acesse</button>
+                        <button class="button"
+                            onclick="window.location.href='http://gyovanne.github.io/SolarSystem'">Acesse</button>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <h3>Skills</h3>
             <img src="src/about/java.png" alt="Java Logo" class="java-icon">
@@ -138,6 +140,7 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/style.js"></script>
 
 </body>

@@ -18,3 +18,7 @@ function getScrol(id) {
     var element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
+
+AOS.init({
+    duration: 1200,
+})
