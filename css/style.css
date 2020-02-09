@@ -129,7 +129,7 @@ pre {
 }
 
 .about-text {
-    margin: 80px auto;
+    margin: 20px auto;
     max-width: 900px;
     min-width: 140px;
     font-size: 18px;
@@ -242,7 +242,12 @@ pre {
 
 .column {
     float: left;
-    width: 25%;
+    width: 50%;
+}
+
+.content {
+    float: left;
+    width: 100%;
 }
 
 /* Clear floats after rows */
