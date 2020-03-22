@@ -13,6 +13,7 @@ var home = "home";
 var contact = "contact";
 var portfolio = "portfolio";
 var skills = "skills";
+var developmentTools = "development-tools";
 
 function getScrol(id) {
     var element = document.getElementById(id);

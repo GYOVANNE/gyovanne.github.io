@@ -17,7 +17,8 @@
         <div class="blurrer"></div>
         <div class="container">
             <div class="navbar-header">
-                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span
+                <button data-toggle="collapse-side" data-target=".side-collapse"
+                    data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span
                         class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="navbar-inverse side-collapse in ">
@@ -27,6 +28,7 @@
                         <li><a onclick="getScrol(about)">About</a></li>
                         <li><a onclick="getScrol(portfolio)">Portfolio</a></li>
                         <li><a onclick="getScrol(skills)">Skills</a></li>
+                        <li><a onclick="getScrol(developmentTools)">Development tools</a></li>
                         <li><a onclick="getScrol(contact)">Contact</a></li>
                     </ul>
                 </nav>
@@ -37,67 +39,105 @@
         <div class="bg-image"></div>
         <div class="bg-text me">
             <div style="font-size: 3em;">Hello, I'm Gyovanne.</div>
-            <p style="font-size: 2em;">Software Developer.
+            <p style="font-size: 2em;">Backend Developer.
             </p>
         </div>
     </section>
 
     <section id="about">
-        <h3>About me</h3>
+        <h3 data-aos="zoom-in">About me</h3>
         <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne" data-aos="zoom-in">
-        <p class="about-text" style="text-align: justify;" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine">
-            I'm a student of the Bachelor in Software Engineering, graduated in Information Technology, by the Federal Rural University of the Semi-Arid (UFERSA). I was a student of Scientific Initiation by the Institutional Program of Volunteer in Scientific Initiation
-            (PIVIC), I was a student of Scientific Initiation by the Institutional Program of Scientific Initiation (PICI) and I am a member of the Research Group on Critical Security Systems (GPSICS).
+        <p class="about-text" style="text-align: justify;" data-aos="zoom-in" data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
+            Graduated in Information Technology at the Federal Rural University of the Semi-Arid (UFERSA) (2020).
+            Currently, he is studying for a degree in Software Engineering at the Federal Rural University of the
+            Semi-Arid, Pau dos Ferros campus. I was a student of Scientific Initiation by the Institutional Program of
+            Volunteer in Scientific Initiation (PIVIC), I was a student of Scientific Initiation by the Institutional
+            Scientific Initiation Program (PICI) and I am a member of the Research Group on Critical Security Systems
+            (GPSICS).
         </p>
     </section>
     <section id="portfolio">
-        <h3>Portfolio</h3>
-        <p>
-            Some of my Projects
-        </p>
-        <div class="main">
-            <div class="row">
-                <div class="content" data-aos="fade-right">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <p>
+                Some of my Projects
+            </p>
+            <div class="main">
+                <div class="content" data-aos="zoom-in">
                     <img src="src/multcare/paginaInicial.png" alt="MultCare Medico" style="width:100%">
                     <h2>MultCare Médico</h2>
-                    <p>The MultCare Medical is a solution for the handling and sharing of clinical documents based on the HL7 CDA standard used for the diagnosis of Chronic Kidney Disease (CKD). It has CDA document reading and writing features. The software
-                        was used to analyze CDA documents generated from the MultCare Medical software. This made it possible to verify the solution's compliance against the HL7 CDA specification.
+                    <p>The MultCare Medical is a solution for the handling and sharing of clinical documents based on
+                        the
+                        HL7 CDA standard used for the diagnosis of Chronic Kidney Disease (CKD). It has CDA document
+                        reading
+                        and writing features. The software
+                        was used to analyze CDA documents generated from the MultCare Medical software. This made it
+                        possible to verify the solution's compliance against the HL7 CDA specification.
                     </p>
-                    <button class="button" onclick="window.location.href='https://github.com/GYOVANNE/MultCare-Medico'">Acesse</button>
+                    <button class="button"
+                        onclick="window.location.href='https://github.com/GYOVANNE/MultCare-Medico'">Acesse</button>
                 </div>
-                <div class="content" data-aos="fade-left">
+                <div class="content" data-aos="zoom-in">
                     <img src="src/solarsystem/solarSystem.png" alt="Solar System" style="width:100%">
                     <h2>Solar System</h2>
-                    <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the solar system from the perspective of the speed, distance and size of each planet.</p>
-                    <button class="button" onclick="window.location.href='http://gyovanne.github.io/SolarSystem'">Acesse</button>
+                    <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the solar
+                        system
+                        from the perspective of the speed, distance and size of each planet.</p>
+                    <button class="button"
+                        onclick="window.location.href='http://gyovanne.github.io/SolarSystem'">Acesse</button>
                 </div>
-                <div class="content" data-aos="fade-right">
+                <div class="content" data-aos="zoom-in">
                     <img src="src/healthPet/healthpet.JPG" alt="HealthPet" style="width:100%">
                     <h2>HealthPet</h2>
-                    <p>HealthPet is a High Fidelity Prototype, made for registrations from both users and their animals. In addition, allow the registration of independent clinics and veterinarians, where they would register the available exams and schedules
-                        for consultations (in the clinic or home visit). In general, it is interesting that the app provides visualization of this information in addition to choosing the best option for your pets (pets).</p>
-                    <button class="button" onclick="window.location.href='https://www.figma.com/file/HKnWr1a9aHN0JOmrLRgIs2/PDI_PROJECT?node-id=0%3A1'">Acesse</button>
+                    <p>HealthPet is a High Fidelity Prototype, made for registrations from both users and their animals.
+                        In
+                        addition, allow the registration of independent clinics and veterinarians, where they would
+                        register
+                        the available exams and schedules
+                        for consultations (in the clinic or home visit). In general, it is interesting that the app
+                        provides
+                        visualization of this information in addition to choosing the best option for your pets (pets).
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href='https://www.figma.com/file/HKnWr1a9aHN0JOmrLRgIs2/PDI_PROJECT?node-id=0%3A1'">Acesse</button>
                 </div>
             </div>
         </div>
     </section>
-    <section id="skills" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <h3>Skills</h3>
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <img src="src/about/java.png" alt="Java Logo" class="java-icon">
             <img src="src/about/c.png" alt="C Logo" class="c-icon">
             <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
             <img src="src/about/css.png" alt="CSS Logo" class="css-icon">
             <img src="src/about/js.png" alt="JS Logo" class="js-icon">
+            <img src="src/about/php.png" alt="php Logo" class="php-icon">
+            <img src="src/about/laravel.png" alt="Laravel Logo" class="laravel-icon">
             <img src="src/about/bootstrap.png" alt="Bootstrap Logo" class="bootstrap-icon">
+            <img src="src/about/spring.png" alt="Spring MVC Logo" class="spring-icon">
             <img src="src/about/mysql.png" alt="MySQL Logo" class="mysql-icon">
             <img src="src/about/postgresql.png" alt="PostgreSQL Logo" class="postgresql-icon">
             <img src="src/about/sqlite.png" alt="SQLite Logo" class="sqlite-icon">
-            <img src="src/about/spring.png" alt="Spring MVC Logo" class="spring-icon">
             <img src="src/about/git.png" alt="Git Logo" class="gitlab-icon">
             <img src="src/about/uml.png" alt="UML Logo" class="uml-icon">
             <img src="src/about/latex.png" alt="LaTex Logo" class="latex-icon">
             <img src="src/about/uxui.png" alt="UXUI Logo" class="uxui-icon">
+            <img src="src/about/scrum.png" alt="Scrum Logo" class="scrum-icon">
+        </div>
+    </section>
+    <section id="development-tools">
+        <h3>Development tools</h3>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <img src="src/about/phpstorm.png" alt="phpStorm Logo" class="phpstorm-icon">
+            <img src="src/about/vscode.png" alt="vscode Logo" class="vscode-icon">
+            <img src="src/about/JIRA.png" alt="JIRA Logo" class="jira-icon">
+            <img src="src/about/tableplus.png" alt="Table Plus Logo" class="tableplus-icon">
+            <img src="src/about/bitbucket.png" alt="BitBucket Logo" class="bitbucket-icon">
+            <img src="src/about/github-black.png" alt="GitHub Logo" class="github-black-icon">
+            <img src="src/about/gitlab.png" alt="GitLab Logo" class="gitlab-icon">
+            <img src="src/about/terminal.png" alt="terminal Logo" class="terminal-icon">
         </div>
     </section>
     <footer id="contact" class="site-footer" role="contentinfo">

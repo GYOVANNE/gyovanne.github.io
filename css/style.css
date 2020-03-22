@@ -9,12 +9,12 @@ html, body {
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
     background-color: rgba(21, 27, 34, 0.643);
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(21, 27, 34, 0.643);
+    box-shadow: 0 4px 8px 0 rgba(31, 19, 201, 0.643);
 }
 
 .navbar-inverse .navbar-nav>li>a {
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -27,6 +27,8 @@ html, body {
     overflow: hidden;
     z-index: -500;
     background-color: rgba(21, 27, 34, 0.643);
+    box-shadow: 1px 4px 16px 0 rgba(23, 16, 112, 0.87);
+    border-style: hidden;
 }
 
 .navbar-inverse {
@@ -106,42 +108,44 @@ pre {
 }
 
 .site-footer, #home {
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(0, 0, 0);
 }
 
 /* --------------end home-------------- */
-
-#portfolio {
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    text-align: center;
-}
 
 /* -----------------about me ---------------- */
 
 #about {
     height: auto;
-    padding-top: 80px;
+    padding-top: 3em;
     padding-bottom: 100px;
     text-align: center;
     margin: 20px 20px;
 }
 
 .about-text {
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 900px;
     min-width: 140px;
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 .profile {
     max-width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(63, 72, 83, 0.876);
+    box-shadow: 1px 4px 16px 0 rgba(16, 5, 65, 0.87);
     border-radius: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+@media (min-width: 1000px) {
+    .about-text { font-size: 1.5em;}
+}
+@media (max-width: 1000px) {
+    .about-text { font-size: 1.9em;}
+}
+@media (max-width: 500px) {
+    .about-text { font-size: 1.4em;}
 }
 
 /* -----------------end about me ---------------- */
@@ -150,9 +154,9 @@ pre {
 
 #skills {
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 100px;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 /* -----------------footer----------------- */
@@ -179,19 +183,21 @@ pre {
     margin: 1 1px;
 }
 
-.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon, .spring-icon, .sqlite-icon, .gitlab-icon, .uml-icon, .latex-icon, .uxui-icon, .js-icon {
+.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon,
+ .spring-icon, .sqlite-icon, .gitlab-icon, .uml-icon, .latex-icon, .uxui-icon, .js-icon, .php-icon, .laravel-icon,
+ .phpstorm-icon,.vscode-icon,.jira-icon,.github-black-icon,.gitlab-icon,.bitbucket-icon, .terminal-icon,.scrum-icon, .tableplus-icon {
     width: 100px;
     height: 60px;
-    border-radius: 1px;
     padding: 1px 20px;
 }
 
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon, .email-icon, .lattes-icon {
     width: 40px;
     height: 40px;
-    opacity: .5;
+    opacity: .3;
     filter: alpha(opacity=100);
     border-radius: 100px;
+    box-shadow: 1px 2px 8px 0 rgba(47, 0, 255, 0.87);
 }
 
 .facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .github-icon:hover, .email-icon:hover, .lattes-icon:hover {
@@ -206,78 +212,67 @@ pre {
 /* --------------scrollbar---------------- */
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
-    border-radius: 20px;
-    background: rgba(71, 71, 71, 0.198);
+    border-radius: 0px;
+    background: rgba(18, 3, 71, 0.726);
+}
+/* -------------------technology tools------------------------- */
+
+#development-tools{
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
+/* -------------------end technology tools------------------------- */
+
 /* -------------------portfolio------------------------- */
+
+#portfolio {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
 
 /* Center website */
 
 * {
     box-sizing: border-box;
-}
-
-.main {
-    max-width: 1000px;
     margin: auto;
 }
 
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-
-.row, .row>.column {
-    padding: 10px;
-}
-
-/* Create four equal columns that floats next to each other */
-
-.column {
-    float: left;
-    width: 50%;
-}
-
-.content {
-    float: left;
-    width: 100%;
-}
-
-/* Clear floats after rows */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.main {
+    max-width: 900px;
 }
 
 /* Content */
 
 .content {
     background-color: transparent;
-    box-shadow: 0 1px 16px 0 rgba(75, 82, 90, 0.87);
-    padding: 10px;
+    box-shadow: 1px 4px 16px 0 rgba(75, 82, 90, 0.87);
+    padding: 1em;
+    margin-bottom: 2em;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
+@media screen and (min-width: 1000px) {
+    .content {
+        width: 80%;
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
-    .column {
+    .content {
         width: 100%;
     }
 }
@@ -286,7 +281,7 @@ pre {
     border-radius: 10px;
     color: rgb(97, 97, 97);
     border-color: transparent;
-    box-shadow: 0 1px 4px 0 rgba(75, 82, 90, 0.87);
+    box-shadow: 1px 2px 8px 0 rgba(75, 82, 90, 0.87);
 }
 
 [aos="fade"] {
