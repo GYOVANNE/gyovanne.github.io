@@ -11,12 +11,16 @@ html, body {
     color: white;
     box-shadow: 0 4px 8px 0 rgba(31, 19, 201, 0.643);
 }
+hr{
+    max-width: 900px;
+}
 
 .navbar-inverse .navbar-nav>li>a {
     font-size: 20px;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 
 .blurry .blurrer {
     height: 60px;
@@ -150,6 +154,27 @@ pre {
 
 /* -----------------end about me ---------------- */
 
+/* -----------------Qualifications ---------------- */
+#qualifications{
+    height: auto;
+    padding-top: 3em;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 20px 20px; 
+}
+
+.card-qualifications{
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: antiquewhite;
+    box-shadow: -5px 1px 10px -5px rgba(31, 19, 201, 0.643);
+    max-width: 450px;
+    border-radius: 10px;
+    line-height: 0.1;
+}
+
+/* -----------------end Qualifications ---------------- */
+
 /* -----------------work experience ---------------- */
 #work-experience{
     height: auto;
@@ -158,6 +183,17 @@ pre {
     text-align: center;
     margin: 20px 20px;    
 }
+
+.card-work-experience{
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: antiquewhite;
+    box-shadow: -5px 1px 10px -5px rgba(31, 19, 201, 0.643);
+    max-width: 450px;
+    border-radius: 10px;
+    line-height: 0.1;
+}
+
 /* -----------------end work experience ---------------- */
 
 /* ------------technology----------------- */
@@ -269,7 +305,7 @@ pre {
     box-shadow: 1px 4px 16px 0 rgba(75, 82, 90, 0.87);
     padding: 1em;
     margin-bottom: 2em;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

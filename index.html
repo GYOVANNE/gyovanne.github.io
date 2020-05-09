@@ -26,6 +26,7 @@
                     <ul class="nav navbar-nav">
                         <li> <a onclick="getScrol(home)" class="active">Home</a></li>
                         <li><a onclick="getScrol(about)">About</a></li>
+                        <li><a onclick="getScrol(qualifications)">Education</a></li>
                         <li><a onclick="getScrol(workExperience)">Work Experience</a></li>
                         <li><a onclick="getScrol(portfolio)">Portfolio</a></li>
                         <li><a onclick="getScrol(skills)">Skills</a></li>
@@ -47,27 +48,62 @@
 
     <section id="about">
         <h3 data-aos="zoom-in">About me</h3>
+        <hr>
         <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne" data-aos="zoom-in">
         <p class="about-text" style="text-align: justify;" data-aos="zoom-in" data-aos-offset="200"
             data-aos-easing="ease-in-sine">
-            Graduated in Information Technology at the Federal Rural University of the Semi-Arid (UFERSA) (2020).
-            Currently, he is studying for a degree in Software Engineering at the Federal Rural University of the
-            Semi-Arid, Pau dos Ferros campus. I was a student of Scientific Initiation by the Institutional Program of
+            <label style="font-size: 30px;">"</label>I was a student of Scientific Initiation by the Institutional Program of
             Volunteer in Scientific Initiation (PIVIC), I was a student of Scientific Initiation by the Institutional
             Scientific Initiation Program (PICI) and I am a member of the Research Group on Critical Security Systems
-            (GPSICS).
+            (GPSICS).<label style="font-size: 30px;">"</label>
         </p>
+        <hr>
     </section>
-    <section id="work-experience">
-        <h3 data-aos="zoom-in">Work Experience</h3>
-        <p>
-            <div>
-                <a href="http://www.agilitymonitoramento.com.br/"  target="_blank">
-                    <img src="http://www.agilitymonitoramento.com.br/dist/images/agility_servi%C3%A7os.png" alt="phpStorm Logo" class="phpstorm-icon">
+
+    <section id="qualifications">
+        <h3>Education</h3>
+        <hr>
+        <div data-aos="zoom-in">
+            <div class="card-qualifications">
+                <a href="https://ufersa.edu.br/" target="_blank">
+                    <img style="width: auto;" src="src/about/ufersa.png" alt="phpStorm Logo" class="phpstorm-icon">
                 </a>
-                Backend developer at Agility Monitoramento [03/2020 - Actual]
+                <label style="margin-top: 1em;">Bachelor of Software Engineering</label>
+                <hr>
+                <label>Period </label>
+                (03/2020 - Actual)
             </div>
-        </p>
+        </div>
+        <div data-aos="zoom-in">
+            <div class="card-qualifications">
+                <a href="https://ufersa.edu.br/" target="_blank">
+                    <img style="width: auto;" src="src/about/ufersa.png" alt="phpStorm Logo" class="phpstorm-icon">
+                </a>
+                <label style="margin-top: 1em;">Bachelor of Information Technology</label>
+                <hr>
+                <label>Period </label>
+                (01/2017 - 02/2020)
+            </div>
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <h3>Work Experience</h3>
+        <hr>
+        <div data-aos="zoom-in">
+            <div class="card-work-experience">
+                <label>Backend developer at</label>
+                <hr>
+                <a href="http://www.agilitymonitoramento.com.br/" target="_blank">
+                    <img src="http://www.agilitymonitoramento.com.br/dist/images/agility_servi%C3%A7os.png"
+                        alt="phpStorm Logo" class="phpstorm-icon">
+                </a>
+                <label style="margin-top: 1em;">Agility Monitoramento</label>
+                <hr>
+                <label>Period </label>
+                (03/2020 - Actual)
+            </div>
+        </div>
     </section>
     <section id="portfolio">
         <div class="container">
@@ -75,6 +111,7 @@
             <p>
                 Some of my Projects
             </p>
+            <hr>
             <div class="main">
                 <div class="content" data-aos="zoom-in">
                     <img src="src/multcare/paginaInicial.png" alt="MultCare Medico" style="width:100%">
@@ -113,16 +150,17 @@
                     <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the solar
                         system
                         from the perspective of the speed, distance and size of each planet.</p>
-                        <form action="http://gyovanne.github.io/SolarSystem" method="get">
-                            <button class="button" type="submit" formtarget="_blank">Access</button>
-                        </form>
+                    <form action="http://gyovanne.github.io/SolarSystem" method="get">
+                        <button class="button" type="submit" formtarget="_blank">Access</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <section id="skills">
         <h3>Skills</h3>
-        <div class="container" data-aos="flip-left" data-aos-duration="2000">
+        <hr>
+        <div class="container" data-aos="flip-left" data-aos-duration="2000" style="max-width: 900px;">
             <img src="src/about/java.png" alt="Java Logo" class="java-icon">
             <img src="src/about/c.png" alt="C Logo" class="c-icon">
             <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
@@ -144,7 +182,8 @@
     </section>
     <section id="development-tools">
         <h3>Development tools</h3>
-        <div class="container" data-aos="flip-right" data-aos-duration="2000">
+        <hr>
+        <div class="container" data-aos="flip-right" data-aos-duration="2000" style="max-width: 900px;">
             <img src="src/about/phpstorm.png" alt="phpStorm Logo" class="phpstorm-icon">
             <img src="src/about/datagrip.png" alt="DataGrip Logo" class="datagrip-icon">
             <img src="src/about/vscode.png" alt="vscode Logo" class="vscode-icon">
@@ -161,7 +200,8 @@
             <ul>
                 <h2>Contact</h2>
                 <li>
-                    <a href="https://wa.me/5584981734309?text=Olá, visitei seu portfólio e gostaria de mais informações!" target="_blank">
+                    <a href="https://wa.me/5584981734309?text=Olá, visitei seu portfólio e gostaria de mais informações!"
+                        target="_blank">
                         <img src="src/about/whatsapp.png" alt="WhatsApp Logo" class="whatsapp-icon"></a>
                 </li>
                 <li>
