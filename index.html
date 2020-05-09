@@ -26,6 +26,7 @@
                     <ul class="nav navbar-nav">
                         <li> <a onclick="getScrol(home)" class="active">Home</a></li>
                         <li><a onclick="getScrol(about)">About</a></li>
+                        <li><a onclick="getScrol(workExperience)">Work Experience</a></li>
                         <li><a onclick="getScrol(portfolio)">Portfolio</a></li>
                         <li><a onclick="getScrol(skills)">Skills</a></li>
                         <li><a onclick="getScrol(developmentTools)">Development tools</a></li>
@@ -57,6 +58,17 @@
             (GPSICS).
         </p>
     </section>
+    <section id="work-experience">
+        <h3 data-aos="zoom-in">Work Experience</h3>
+        <p>
+            <div>
+                <a href="http://www.agilitymonitoramento.com.br/"  target="_blank">
+                    <img src="http://www.agilitymonitoramento.com.br/dist/images/agility_servi%C3%A7os.png" alt="phpStorm Logo" class="phpstorm-icon">
+                </a>
+                Backend developer at Agility Monitoramento [03/2020 - Actual]
+            </div>
+        </p>
+    </section>
     <section id="portfolio">
         <div class="container">
             <h3>Portfolio</h3>
@@ -75,8 +87,25 @@
                         was used to analyze CDA documents generated from the MultCare Medical software. This made it
                         possible to verify the solution's compliance against the HL7 CDA specification.
                     </p>
-                    <button class="button"
-                        onclick="window.location.href='https://github.com/GYOVANNE/MultCare-Medico'">Acesse</button>
+                    <form action="https://github.com/GYOVANNE/MultCare-Medico" method="get">
+                        <button class="button" type="submit" formtarget="_blank">Access</button>
+                    </form>
+                </div>
+                <div class="content" data-aos="zoom-in">
+                    <img src="src/CDA/cda.png" alt="MultCare Medico" style="width:100%">
+                    <h2>CDAPI</h2>
+                    <p>The CDApi (Clinical Document Architecture Programming Interface) is an object-oriented tool for
+                        Java, created to assist developers of Health Information Systems (HIS) software. The adoption of
+                        this tool has the objective of making the processes between the systems responsible for the
+                        operationalization of the HL7CDA standard more agile, providing improvements in the access to
+                        updated medical records of patients. Through this API, applications can transfer clinical data
+                        between doctors and patients. This API is currently available in version 1.0. It consists of a
+                        series of functions accessible only by programming and can be downloaded through the link
+                        provided with instructions on how to use the tool by customers.
+                    </p>
+                    <form action="https://github.com/GYOVANNE/CDAPI" method="get">
+                        <button class="button" type="submit" formtarget="_blank">Access</button>
+                    </form>
                 </div>
                 <div class="content" data-aos="zoom-in">
                     <img src="src/solarsystem/solarSystem.png" alt="Solar System" style="width:100%">
@@ -84,30 +113,16 @@
                     <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the solar
                         system
                         from the perspective of the speed, distance and size of each planet.</p>
-                    <button class="button"
-                        onclick="window.location.href='http://gyovanne.github.io/SolarSystem'">Acesse</button>
-                </div>
-                <div class="content" data-aos="zoom-in">
-                    <img src="src/healthPet/healthpet.JPG" alt="HealthPet" style="width:100%">
-                    <h2>HealthPet</h2>
-                    <p>HealthPet is a High Fidelity Prototype, made for registrations from both users and their animals.
-                        In
-                        addition, allow the registration of independent clinics and veterinarians, where they would
-                        register
-                        the available exams and schedules
-                        for consultations (in the clinic or home visit). In general, it is interesting that the app
-                        provides
-                        visualization of this information in addition to choosing the best option for your pets (pets).
-                    </p>
-                    <button class="button"
-                        onclick="window.location.href='https://www.figma.com/file/HKnWr1a9aHN0JOmrLRgIs2/PDI_PROJECT?node-id=0%3A1'">Acesse</button>
+                        <form action="http://gyovanne.github.io/SolarSystem" method="get">
+                            <button class="button" type="submit" formtarget="_blank">Access</button>
+                        </form>
                 </div>
             </div>
         </div>
     </section>
     <section id="skills">
         <h3>Skills</h3>
-        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container" data-aos="flip-left" data-aos-duration="2000">
             <img src="src/about/java.png" alt="Java Logo" class="java-icon">
             <img src="src/about/c.png" alt="C Logo" class="c-icon">
             <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
@@ -129,8 +144,9 @@
     </section>
     <section id="development-tools">
         <h3>Development tools</h3>
-        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container" data-aos="flip-right" data-aos-duration="2000">
             <img src="src/about/phpstorm.png" alt="phpStorm Logo" class="phpstorm-icon">
+            <img src="src/about/datagrip.png" alt="DataGrip Logo" class="datagrip-icon">
             <img src="src/about/vscode.png" alt="vscode Logo" class="vscode-icon">
             <img src="src/about/JIRA.png" alt="JIRA Logo" class="jira-icon">
             <img src="src/about/tableplus.png" alt="Table Plus Logo" class="tableplus-icon">
@@ -144,9 +160,10 @@
         <div class="social-wrapper">
             <ul>
                 <h2>Contact</h2>
-                <p>
-                    Cell: (84) 9 8173-4309
-                </p>
+                <li>
+                    <a href="https://wa.me/5584981734309?text=Olá, visitei seu portfólio e gostaria de mais informações!" target="_blank">
+                        <img src="src/about/whatsapp.png" alt="WhatsApp Logo" class="whatsapp-icon"></a>
+                </li>
                 <li>
                     <a href="mailto:gyovanne.ufersa@gmail.com" target="_blank">
                         <img src="src/about/email.png" alt="Email Logo" class="email-icon"></a>
