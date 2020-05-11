@@ -8,12 +8,10 @@ $(document).ready(function () {
     });
 });
 
-var about = "about";
 var home = "home";
 var contact = "contact";
 var portfolio = "portfolio";
 var skills = "skills";
-var developmentTools = "development-tools";
 var workExperience = 'work-experience';
 var qualifications = 'qualifications';
 

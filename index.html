@@ -25,12 +25,10 @@
                 <nav role="navigation" class="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li> <a onclick="getScrol(home)" class="active">Home</a></li>
-                        <li><a onclick="getScrol(about)">About</a></li>
                         <li><a onclick="getScrol(qualifications)">Education</a></li>
                         <li><a onclick="getScrol(workExperience)">Work Experience</a></li>
                         <li><a onclick="getScrol(portfolio)">Portfolio</a></li>
                         <li><a onclick="getScrol(skills)">Skills</a></li>
-                        <li><a onclick="getScrol(developmentTools)">Development tools</a></li>
                         <li><a onclick="getScrol(contact)">Contact</a></li>
                     </ul>
                 </nav>
@@ -45,21 +43,6 @@
             </p>
         </div>
     </section>
-
-    <section id="about">
-        <h3 data-aos="zoom-in">About me</h3>
-        <hr>
-        <img class="profile" src="src/gyovanne.jpg" alt="Gyovanne" data-aos="zoom-in">
-        <p class="about-text" style="text-align: justify;" data-aos="zoom-in" data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-            <label style="font-size: 30px;">"</label>I was a student of Scientific Initiation by the Institutional Program of
-            Volunteer in Scientific Initiation (PIVIC), I was a student of Scientific Initiation by the Institutional
-            Scientific Initiation Program (PICI) and I am a member of the Research Group on Critical Security Systems
-            (GPSICS).<label style="font-size: 30px;">"</label>
-        </p>
-        <hr>
-    </section>
-
     <section id="qualifications">
         <h3>Education</h3>
         <hr>
@@ -68,21 +51,18 @@
                 <a href="https://ufersa.edu.br/" target="_blank">
                     <img style="width: auto;" src="src/about/ufersa.png" alt="phpStorm Logo" class="phpstorm-icon">
                 </a>
-                <label style="margin-top: 1em;">Bachelor of Software Engineering</label>
                 <hr>
-                <label>Period </label>
-                (03/2020 - Actual)
-            </div>
-        </div>
-        <div data-aos="zoom-in">
-            <div class="card-qualifications">
-                <a href="https://ufersa.edu.br/" target="_blank">
-                    <img style="width: auto;" src="src/about/ufersa.png" alt="phpStorm Logo" class="phpstorm-icon">
-                </a>
-                <label style="margin-top: 1em;">Bachelor of Information Technology</label>
-                <hr>
-                <label>Period </label>
-                (01/2017 - 02/2020)
+                <div class="card-qualifications-text">
+                    Bachelor degree by Software Engineering
+                    <div>
+                        <label>Period </label> (03/2020 - Current)
+                    </div>
+                    <hr>
+                    Bachelor degree by Information Technology
+                    <div>
+                        <label>Period</label> (01/2017 - 02/2020)
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -92,16 +72,15 @@
         <hr>
         <div data-aos="zoom-in">
             <div class="card-work-experience">
-                <label>Backend developer at</label>
-                <hr>
                 <a href="http://www.agilitymonitoramento.com.br/" target="_blank">
                     <img src="http://www.agilitymonitoramento.com.br/dist/images/agility_servi%C3%A7os.png"
                         alt="phpStorm Logo" class="phpstorm-icon">
                 </a>
-                <label style="margin-top: 1em;">Agility Monitoramento</label>
                 <hr>
-                <label>Period </label>
-                (03/2020 - Actual)
+                Backend developer at Agility Monitoramento
+                <div>
+                    <label>Period</label> (03/2020 - Current)
+                </div>
             </div>
         </div>
     </section>
@@ -114,7 +93,7 @@
             <hr>
             <div class="main">
                 <div class="content" data-aos="zoom-in">
-                    <img src="src/multcare/paginaInicial.png" alt="MultCare Medico" style="width:100%">
+                    <img src="src/multcare/paginaInicial.png" alt="MultCare Medico" style="width:100%; border-radius: 10px;">
                     <h2>MultCare Médico</h2>
                     <p>The MultCare Medical is a solution for the handling and sharing of clinical documents based on
                         the
@@ -129,7 +108,7 @@
                     </form>
                 </div>
                 <div class="content" data-aos="zoom-in">
-                    <img src="src/CDA/cda.png" alt="MultCare Medico" style="width:100%">
+                    <img src="src/CDA/cda.png" alt="MultCare Medico" style="width:100%; border-radius: 10px;">
                     <h2>CDAPI</h2>
                     <p>The CDApi (Clinical Document Architecture Programming Interface) is an object-oriented tool for
                         Java, created to assist developers of Health Information Systems (HIS) software. The adoption of
@@ -145,7 +124,7 @@
                     </form>
                 </div>
                 <div class="content" data-aos="zoom-in">
-                    <img src="src/solarsystem/solarSystem.png" alt="Solar System" style="width:100%">
+                    <img src="src/solarsystem/solarSystem.png" alt="Solar System" style="width:100%; border-radius: 10px;">
                     <h2>Solar System</h2>
                     <p>Solar System is web software for astronomy lovers. Here you can accurately visualize the solar
                         system
@@ -159,8 +138,11 @@
     </section>
     <section id="skills">
         <h3>Skills</h3>
+        <p>
+            Skills and Development tools
+        </p>
         <hr>
-        <div class="container" data-aos="flip-left" data-aos-duration="2000" style="max-width: 900px;">
+        <div class="container" data-aos="flip-left" data-aos-duration="2000" style="max-width: 800px;">
             <img src="src/about/java.png" alt="Java Logo" class="java-icon">
             <img src="src/about/c.png" alt="C Logo" class="c-icon">
             <img src="src/about/html.png" alt="HTML Logo" class="html-icon">
@@ -178,12 +160,6 @@
             <img src="src/about/latex.png" alt="LaTex Logo" class="latex-icon">
             <img src="src/about/uxui.png" alt="UXUI Logo" class="uxui-icon">
             <img src="src/about/scrum.png" alt="Scrum Logo" class="scrum-icon">
-        </div>
-    </section>
-    <section id="development-tools">
-        <h3>Development tools</h3>
-        <hr>
-        <div class="container" data-aos="flip-right" data-aos-duration="2000" style="max-width: 900px;">
             <img src="src/about/phpstorm.png" alt="phpStorm Logo" class="phpstorm-icon">
             <img src="src/about/datagrip.png" alt="DataGrip Logo" class="datagrip-icon">
             <img src="src/about/vscode.png" alt="vscode Logo" class="vscode-icon">
@@ -195,6 +171,7 @@
             <img src="src/about/terminal.png" alt="terminal Logo" class="terminal-icon">
         </div>
     </section>
+
     <footer id="contact" class="site-footer" role="contentinfo">
         <div class="social-wrapper">
             <ul>
