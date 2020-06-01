@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 html, body {
     margin: auto;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgb(31, 31, 36);
+    color: white;
 }
 
 /* ------------------Navbar--------------- */
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    background-color: rgba(21, 27, 34, 0.643);
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(31, 19, 201, 0.643);
+    /* background-color: rgba(21, 27, 34, 0.643); */
+    color: rgba(243, 156, 18,1.0);
+    /* box-shadow: 0 4px 8px 0 rgba(31, 19, 201, 0.643); */
 }
 hr{
-    max-width: 730px;
+    max-width: 720px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -30,9 +32,8 @@ hr{
     right: -10px;
     position: absolute;
     overflow: hidden;
-    z-index: -500;
-    background-color: rgba(21, 27, 34, 0.643);
-    box-shadow: 1px 4px 16px 0 rgba(23, 16, 112, 0.87);
+    z-index: -1;
+    background-color: rgba(18, 19, 29, 0.774);
     border-style: hidden;
 }
 
@@ -90,8 +91,8 @@ pre {
 
 .bg-image {
     background-image: url('../src/background.jpg');
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,20 +102,21 @@ pre {
 .bg-text {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.452);
-    color: white;
-    border: 0.1px solid rgb(255, 255, 255);
+    color: rgb(190, 133, 41);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 0px;
+    z-index: 1;
+    width: 60%;
+    padding: 10px;
     text-align: center;
 }
 
 .site-footer, #home {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0)
 }
 
 /* --------------end home-------------- */
@@ -161,9 +163,10 @@ pre {
     padding: 1em;
     margin-bottom: 2em;
     box-shadow: antiquewhite;
-    box-shadow: 2px 2px 10px -5px rgba(31, 19, 201, 0.404);
     max-width: 720px;
-    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.404);
 }
 .card-qualifications-text{
     font-weight: normal;
@@ -184,9 +187,10 @@ pre {
     padding: 1em;
     margin-bottom: 2em;
     box-shadow: antiquewhite;
-    box-shadow: 2px 2px 10px -5px rgba(31, 19, 201, 0.404);
     max-width: 720px;
-    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.404);
 }
 
 /* -----------------end work experience ---------------- */
@@ -239,7 +243,7 @@ pre {
     opacity: .3;
     filter: alpha(opacity=100);
     border-radius: 100px;
-    box-shadow: 1px 2px 8px 0 rgba(47, 0, 255, 0.87);
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.87);
 }
 
 .whatsapp-icon:hover, .facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .github-icon:hover, .email-icon:hover, .lattes-icon:hover {
@@ -254,13 +258,13 @@ pre {
 /* --------------scrollbar---------------- */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
-    border-radius: 0px;
-    background: rgba(18, 3, 71, 0.726);
+    border-radius: 50px;
+    background: rgba(243, 156, 18,1.0);
 }
 
 /* -------------------portfolio------------------------- */
@@ -288,10 +292,11 @@ pre {
 
 .content {
     background-color: transparent;
-    box-shadow: 2px 2px 10px -1px rgba(31, 19, 201, 0.404);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.404);
     padding: 1em;
     margin-bottom: 2em;
-    border-radius: 15px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
