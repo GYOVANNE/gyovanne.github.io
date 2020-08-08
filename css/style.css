@@ -7,19 +7,29 @@ html, body {
 }
 
 /* ------------------Navbar--------------- */
+.navbar-inverse {
+    border-bottom: none;
+}
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: rgba(24, 220, 255,1.0);
-     box-shadow: 0 4px 8px 0 rgba(230, 103, 103,1.0);
-     border-radius: 15px;
+    border-bottom: 1px solid rgba(230, 103, 103,1.0);
+    color: rgba(230, 103, 103,1.0);
+    font-size: 1.5rem;
 }
+
 hr{
     max-width: 720px;
+    border: 1px solid rgba(124, 124, 124, 0.13);
+}
+
+.category {
+    padding: 0px 0 20px 0;
+    color: rgba(136, 136, 136, 0.329);
 }
 
 .navbar-inverse .navbar-nav>li>a {
     margin: auto auto;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: rgba(24, 220, 255,1.0);
     cursor: pointer;
 }
@@ -247,10 +257,19 @@ pre {
     display: inline;
     margin: 1 1px;
 }
+
+.logo-xp1,.logo-xp2{
+    border-radius: 20px;
+    width: 80px;
+}
+.logo-qual1{
+    width: 60px;
+}
 /* -----------------Skills and development tools icons----------------- */
 .java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon,
  .spring-icon, .sqlite-icon, .gitlab-icon, .uml-icon, .latex-icon, .uxui-icon, .js-icon, .php-icon, .laravel-icon,
- .phpstorm-icon,.vscode-icon,.jira-icon,.github-black-icon,.gitlab-icon,.bitbucket-icon, .terminal-icon,.scrum-icon, .tableplus-icon, .datagrip-icon {
+ .phpstorm-icon,.vscode-icon,.jira-icon,.github-black-icon,.gitlab-icon,.bitbucket-icon, .terminal-icon,.scrum-icon,
+ .adonis-icon, .mariadb-icon, .tableplus-icon, .datagrip-icon {
     width: 100px;
     height: 60px;
     padding: 1px 20px;
@@ -283,7 +302,7 @@ pre {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 50px;
-    background: rgba(243, 156, 18,1.0);
+    background: rgba(230, 103, 103,1.0);
 }
 
 /* -------------------portfolio------------------------- */
@@ -347,4 +366,9 @@ pre {
 
 [aos="fade"].aos-animate {
     opacity: 1;
+}
+
+.nav-background {
+    background-color: rgba(0, 0, 0, 0.205);
+    color: antiquewhite;
 }

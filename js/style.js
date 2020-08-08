@@ -24,3 +24,13 @@ function getScrol(id) {
 AOS.init({
     duration: 1200,
 })
+
+$(function() {
+    $(window).on("scroll", function() {
+      if($(window).scrollTop() > 500) {
+        $(".navbar-inverse").addClass("nav-background");
+      } else {
+        $(".navbar-inverse").removeClass("nav-background");
+      }
+    });
+  });
