@@ -1,6 +1,3 @@
-<h1 align="center">
-<img alt="" title="" src="https://img2.pngio.com/portfolio-png-7-png-image-portfolio-png-3180_1221.png" width="" />
-</h1>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/GYOVANNE/gyovanne">
 
@@ -19,5 +16,3 @@
 <br>
 
 ## 💻 About
-
-
