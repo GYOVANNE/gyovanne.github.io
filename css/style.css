@@ -135,7 +135,6 @@ pre {
     background-size: cover; 
 }
 .bg-text {
-
     color: rgba(24, 220, 255,1.0);
     position: absolute;
     top: 50%;
@@ -143,7 +142,7 @@ pre {
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 60%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .site-footer, #home {
