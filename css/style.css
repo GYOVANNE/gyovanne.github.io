@@ -294,7 +294,18 @@ pre {
     width: 80px;
 }
 .logo-qual1{
+    width: 18rem;
+}
+.logo-qual2{
     width: 60px;
+}
+.logo-patented {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    float: right;
+    width: 8rem;
+    opacity: 0.5;
 }
 /* -----------------Skills and development tools icons----------------- */
 .java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon,
