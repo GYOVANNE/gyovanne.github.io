@@ -290,8 +290,7 @@ pre {
 }
 
 .logo-xp1,.logo-xp2{
-    border-radius: 20px;
-    width: 80px;
+    width: 150px;
 }
 .logo-qual1{
     width: 18rem;
@@ -308,7 +307,7 @@ pre {
     opacity: 0.5;
 }
 /* -----------------Skills and development tools icons----------------- */
-.java-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon,
+.java-icon,.reactjs-icon, .c-icon, .html-icon, .bootstrap-icon, .css-icon, .mysql-icon, .postgresql-icon,
  .spring-icon, .sqlite-icon, .gitlab-icon, .uml-icon, .latex-icon, .uxui-icon, .js-icon, .php-icon, .laravel-icon,
  .phpstorm-icon,.vscode-icon,.jira-icon,.github-black-icon,.gitlab-icon,.bitbucket-icon, .terminal-icon,.scrum-icon,
  .adonis-icon, .mariadb-icon, .tableplus-icon, .datagrip-icon {
